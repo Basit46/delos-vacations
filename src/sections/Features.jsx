@@ -1,5 +1,6 @@
 import React from "react";
 import vacaImg from "../assets/feature.svg";
+import vacaImg2 from "../assets/f2.svg";
 import grid from "../assets/grid.svg";
 
 const Features = () => {
@@ -45,7 +46,7 @@ const Features = () => {
         <div className="w-[50%] h-[928px] rounded-[24px] overflow-hidden">
           <img
             className="h-full w-full object-cover"
-            src={vacaImg}
+            src={vacaImg2}
             alt="vacation"
           />
         </div>
