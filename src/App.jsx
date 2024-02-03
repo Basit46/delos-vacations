@@ -36,7 +36,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="max-w-[1500px] mx-auto">
       <div className="relative min-h-[100vh] text-white">
         <div className="z-[-1] absolute h-full w-full bg-[skyblue]">
           <img

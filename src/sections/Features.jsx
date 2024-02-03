@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import vacaImg from "../assets/feature.svg";
 import vacaImg2 from "../assets/f2.svg";
 import grid from "../assets/grid.svg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Features = () => {
+  const imgsRef = useRef([]);
+
+  useEffect(() => {
+    imgsRef.current.forEach((img) =>
+      gsap.fromTo(
+        img,
+        { scale: 2 },
+        {
+          scale: 1,
+          duration: 2.5,
+          scrollTrigger: {
+            trigger: img,
+            start: "top 10%",
+          },
+        }
+      )
+    );
+  }, []);
+
   return (
     <div className="relative mt-[129px]">
       <div className="h-[300vh] flex justify-between pl-[100px]">
@@ -35,6 +58,7 @@ const Features = () => {
 
         <div className="sticky top-0 w-[50%] h-screen overflow-hidden">
           <img
+            ref={(e) => imgsRef.current.push(e)}
             className="h-full w-full object-cover"
             src={vacaImg}
             alt="vacation"
@@ -45,6 +69,7 @@ const Features = () => {
       <div className="mt-[157px] pr-[100px] h-[300vh] flex justify-between">
         <div className="sticky top-0 w-[50%] h-[100vh] overflow-hidden">
           <img
+            ref={(e) => imgsRef.current.push(e)}
             className="h-full w-full object-cover"
             src={vacaImg2}
             alt="vacation"

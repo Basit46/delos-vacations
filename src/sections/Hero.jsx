@@ -34,9 +34,10 @@ const Hero = () => {
         opacity: 0,
       },
       {
+        delay: 1.7,
         opacity: 1,
-        stagger: 0.03,
-        duration: 0.4,
+        stagger: 0.02,
+        duration: 1,
       }
     );
   }, []);
