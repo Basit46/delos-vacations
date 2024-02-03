@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -21,6 +22,16 @@ body {
   }
   .feature-box p {
     @apply text-[#667085] w-[280px];
+  }
+
+  footer .links h1 {
+    @apply text-[20px] mb-[10px] font-medium;
+  }
+  footer .links ul li {
+    @apply list-disc leading-[140%] opacity-70 hover:opacity-100 duration-300 cursor-pointer;
+  }
+  footer .links ul li a {
+    @apply text-[14px] underline;
   }
 }
 

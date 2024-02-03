@@ -7,6 +7,9 @@ export default {
         vsm: "450px",
         xmd: "800px",
       },
+      fontFamily: {
+        PlusJakartaSans: ["Plus Jakarta Sans", "saans-serif"],
+      },
     },
   },
   plugins: [],
