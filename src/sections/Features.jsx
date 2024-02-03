@@ -5,8 +5,8 @@ import grid from "../assets/grid.svg";
 
 const Features = () => {
   return (
-    <div className="mt-[129px] px-[100px]">
-      <div className="flex justify-between">
+    <div className="relative mt-[129px]">
+      <div className="h-[300vh] flex justify-between pl-[100px]">
         <div className="flex flex-col justify-between">
           <div className="feature-box">
             <span>
@@ -33,7 +33,7 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="w-[50%] h-[928px] rounded-[24px] overflow-hidden">
+        <div className="sticky top-0 w-[50%] h-screen overflow-hidden">
           <img
             className="h-full w-full object-cover"
             src={vacaImg}
@@ -42,8 +42,8 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="mt-[157px] flex justify-between">
-        <div className="w-[50%] h-[928px] rounded-[24px] overflow-hidden">
+      <div className="mt-[157px] pr-[100px] h-[300vh] flex justify-between">
+        <div className="sticky top-0 w-[50%] h-[100vh] overflow-hidden">
           <img
             className="h-full w-full object-cover"
             src={vacaImg2}
@@ -51,7 +51,7 @@ const Features = () => {
           />
         </div>
 
-        <div className="flex flex-col justify-between">
+        <div className="h-[300vh] flex flex-col justify-between">
           <div className="feature-box">
             <span>
               <img src={grid} alt="icon" />

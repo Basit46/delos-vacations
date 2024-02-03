@@ -14,14 +14,17 @@ body {
     @apply text-[15px];
   }
 
+  .feature-box {
+    @apply h-[33.3%] flex flex-col items-center justify-center;
+  }
   .feature-box span {
     @apply h-[54px] w-[54px] bg-[#F4F3FF] grid place-items-center rounded-full;
   }
   .feature-box h3 {
-    @apply my-[14px] text-[20px] font-bold text-[#14213D];
+    @apply my-[14px] text-[20px] font-bold text-[#14213D] text-center;
   }
   .feature-box p {
-    @apply text-[#667085] w-[280px];
+    @apply text-[#667085] w-[280px] text-center;
   }
 
   footer .links h1 {
@@ -33,6 +36,13 @@ body {
   footer .links ul li a {
     @apply text-[14px] underline;
   }
+}
+
+.text1 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.text2 .char {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .heroBg {
