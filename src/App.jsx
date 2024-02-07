@@ -37,25 +37,31 @@ const App = () => {
 
   return (
     <div className="max-w-[1500px] mx-auto">
-      <div className="relative min-h-[100vh] text-white">
-        <div className="z-[-1] absolute h-full w-full bg-[skyblue]">
-          <img
-            className="h-full w-full object-cover"
-            src={images[currId]}
-            alt="vacation"
-          />
+      <div className="hidden xl:block">
+        <div className="relative min-h-[100vh] text-white">
+          <div className="z-[-1] absolute h-full w-full bg-[skyblue]">
+            <img
+              className="h-full w-full object-cover"
+              src={images[currId]}
+              alt="vacation"
+            />
+          </div>
+          <Navbar />
+          <Hero />
+          <Booking />
         </div>
-        <Navbar />
-        <Hero />
-        <Booking />
+
+        <About />
+        <Explore />
+        <Discover />
+        <Features />
+        <PreFooter />
+        <Footer />
       </div>
 
-      <About />
-      <Explore />
-      <Discover />
-      <Features />
-      <PreFooter />
-      <Footer />
+      <h1 className="xl:hidden text-[3rem] text-center mt-[40px]">
+        Coming Soon (Desktop view for now)
+      </h1>
     </div>
   );
 };
