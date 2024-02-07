@@ -56,24 +56,28 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="sticky top-0 w-[50%] h-screen overflow-hidden">
-          <img
-            ref={(e) => imgsRef.current.push(e)}
-            className="h-full w-full object-cover"
-            src={vacaImg}
-            alt="vacation"
-          />
+        <div className="sticky top-0 w-[50%] h-screen overflow-hidden pr-[100px] py-[25px] rounded-[24px]">
+          <div className="h-full w-full rounded-[24px] overflow-hidden">
+            <img
+              ref={(e) => imgsRef.current.push(e)}
+              className="h-full w-full object-cover rounded-[24px]"
+              src={vacaImg}
+              alt="vacation"
+            />
+          </div>
         </div>
       </div>
 
       <div className="mt-[157px] pr-[100px] h-[300vh] flex justify-between">
-        <div className="sticky top-0 w-[50%] h-[100vh] overflow-hidden">
-          <img
-            ref={(e) => imgsRef.current.push(e)}
-            className="h-full w-full object-cover"
-            src={vacaImg2}
-            alt="vacation"
-          />
+        <div className="sticky top-0 w-[50%] h-[100vh] overflow-hidden pl-[100px] py-[25px] rounded-[24px]">
+          <div className="h-full w-full rounded-[24px] overflow-hidden">
+            <img
+              ref={(e) => imgsRef.current.push(e)}
+              className="h-full w-full object-cover rounded-[24px]"
+              src={vacaImg2}
+              alt="vacation"
+            />
+          </div>
         </div>
 
         <div className="h-[300vh] flex flex-col justify-between">
